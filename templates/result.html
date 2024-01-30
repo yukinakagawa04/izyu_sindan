@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>診断結果</title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+</head>
+
+<body>
+    <div class="resultpage">
+        <h1>移住タイプ診断結果</h1>
+        <p>あなたの移住タイプは <strong>{{ result }}</strong> です。</p>
+        {% if result == "自然派" %}
+        <img src="/static/nature_image.jpg" alt="自然派の画像">
+        {% elif result == "冒険派" %}
+        <img src="/static/adventure_image.jpg" alt="冒険派の画像">
+        {% elif result == "都市派" %}
+        <img src="/static/city_image.jpg" alt="都市派の画像">
+        {% endif %}
+        <p>移住先を決定する際に参考にしてください。</p>
+
+    <a href="https://twitter.com/share" class="twitter-share-button"
+        data-text="移住タイプの診断結果！" data-lang="ja" data-size="large">ツイート</a>
+    <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');
+    </script>
+
+    </div>
+</body>
+
+
+
+</html>

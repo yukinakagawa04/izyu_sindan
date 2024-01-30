@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>移住タイプ診断</title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+</head>
+
+<body>
+    <h1>移住タイプ診断</h1>
+    <form method="post" action="/result">
+        <p>1. あなたはどの気候が好きですか？</p>
+        <input type="radio" name="q1" value="1"> 寒い
+        <input type="radio" name="q1" value="2"> 寒暖差がある
+        <input type="radio" name="q1" value="3"> 温暖
+        <input type="radio" name="q1" value="4"> 暑い
+        <input type="radio" name="q1" value="5"> 極端に暑い
+        <br>
+
+        <p>2. 人とのコミュニケーションは得意ですか？</p>
+        <input type="radio" name="q2" value="1"> 非常に得意
+        <input type="radio" name="q2" value="2"> やや得意
+        <input type="radio" name="q2" value="3"> ふつう
+        <input type="radio" name="q2" value="4"> あまり得意ではない
+        <input type="radio" name="q2" value="5"> 苦手
+        <br>
+
+        <p>3. 仕事と生活のどちらを優先させたいですか？</p>
+        <input type="radio" name="q3" value="1"> 仕事を優先させたい
+        <input type="radio" name="q3" value="2"> やや仕事を優先させたい
+        <input type="radio" name="q3" value="3"> 両方均等に重要
+        <input type="radio" name="q3" value="4"> やや生活を優先させたい
+        <input type="radio" name="q3" value="5"> 生活を優先させたい
+        <br>
+
+        <p>4. 都市部と田舎のどちらが好きですか？</p>
+        <input type="radio" name="q4" value="1"> 都市派
+        <input type="radio" name="q4" value="2"> やや都市派
+        <input type="radio" name="q4" value="3"> どちらも好き
+        <input type="radio" name="q4" value="4"> やや田舎派
+        <input type="radio" name="q4" value="5"> 田舎派
+        <br>
+
+        <p>5. 移住先での生活スタイルはどのようなものが好きですか？</p>
+        <input type="radio" name="q5" value="1"> のんびり
+        <input type="radio" name="q5" value="2"> ゆるやかにアクティブ
+        <input type="radio" name="q5" value="3"> バランスが取れた
+        <input type="radio" name="q5" value="4"> ゆるやかに忙しい
+        <input type="radio" name="q5" value="5"> アクティブ
+        <br>
+
+        <br>
+        <input type="submit" value="診断">
+    </form>
+</body>
+
+</html>
